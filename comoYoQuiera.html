@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="comoyoquiera.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <div class="inner-container">
+                <label for="username">Username</label>
+                <input id="username" type="text">
+            </div>
+            <div class="inner-container">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <div id="welcome-message" style="display: none;"></div>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            let welcomeMessage = document.getElementById('welcome-message');
+            
+            if (username === 'yoEse' && password === 'yes') {
+                welcomeMessage.style.display = 'block';
+                welcomeMessage.textContent = 'Bienvenido José Salvador';
+            } else {
+                welcomeMessage.style.display = 'block';
+                welcomeMessage.textContent = 'Usuario o contraseña incorrectos';
+            }
+            
+            console.log({username, password});
+        });
+    </script>
+</body>
+</html>

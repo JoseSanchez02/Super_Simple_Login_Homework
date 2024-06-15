@@ -1,0 +1,28 @@
+
+        body{
+            background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 200px;
+            border-radius: 15px;
+            box-shadow: 5cm;
+            background-color: purple;
+            gap: 10px;
+        }
+
+        .inner-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+    
